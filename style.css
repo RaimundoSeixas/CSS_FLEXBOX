@@ -122,6 +122,8 @@ a {
   text-decoration: none;
 
 }
+
+
 /* __________________SIDBAR DA PÁGINA___________________ */
 .sidbar1 {
   display: grid;
@@ -132,10 +134,56 @@ a {
   margin: 0 auto;
   margin-top: 60px;
 }
+
+.imagem_principal h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .actions {
   display: flex;
-  padding: 10px;
-  margin-bottom: 5px;
+  border: 1px solid black;
+  
+}
+.dio{
+  border: 1px solid black;
+  width: 40px;
+  height: 50px;
+  margin: 0px;
+}
+.actions h4{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.41px;
+  /* margin: 5px; */
+ 
+}
+.actions .pg {
+  /* border: 1px solid black; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  /* padding: 10px 20px 0 20px; */
+}
+.pg {
+  flex-direction: row;
+  padding-left: 40px;
+  margin-top: -20px;
+
+}
+
+/* ____________REVISAR ESTE CÓDIGO ABAIXO___________ */
+/* .actions .dio {
+  padding: 1px;
+} */
+
+
+button {
+  width: 159px;
+  height: 40px;
+  border-radius: 5px;
+  background: red;
+  color: #f0f0f0;
 }
 
 .sidbar2 img {
@@ -155,21 +203,24 @@ a {
   margin-bottom: 5px; 
 }
 .p3 h3 {
- 
   font-size: 14px;
   font-weight: 600;
   line-height: 16.41px;
+  margin-top: -8px;
+  color: rgb(47, 47, 47);
 }
 .p3 h5 {
   font-size: 12px;
   font-weight: 400;
   line-height: 14.06px;
+  margin: 5px 0;
  
 }
 .p3 p {
   font-size: 10px;
   font-weight: 400;
   line-height: 14.06px;
+  margin: -2px;
  
 }
 
@@ -188,3 +239,9 @@ a {
     margin: 0 10px;
   }
 }
+
+.dio, button, .pg {
+  /* padding: 30px; */
+  margin: 15px 5px 5px 15px;
+  margin-top: -15px;
+} 
