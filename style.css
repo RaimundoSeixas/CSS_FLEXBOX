@@ -59,7 +59,6 @@ body {
 /* ----------ESTILIZAÇÃO DO BTN DE BUSCA-------------- */
 .site {
   position: relative;
-  /* max-width: 500px; */
   margin: 10px auto;
   width: 50%;
   height: 35px;
@@ -73,7 +72,6 @@ body {
   border: 1px solid #c4c3c3;
   padding: 0 20px;
   font-size: 16px;
-  /* text-transform: capitalize; */
 }
 
 .btn {
@@ -105,7 +103,6 @@ body {
 .perfil_usr {
   height: 30px;
   width: 30px;
-  /* border-radius: 100%;  */
   overflow: hidden;
 }
 
@@ -122,14 +119,11 @@ a {
   text-decoration: none;
 
 }
-
-
 /* __________________SIDBAR DA PÁGINA___________________ */
 .sidbar1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  /* max-width: 1024px; */
   padding: 10px;
   margin: 0 auto;
   margin-top: 60px;
@@ -139,51 +133,44 @@ a {
   font-weight: 600;
   font-size: 20px;
 }
-
 .actions {
   display: flex;
-  border: 1px solid black;
-  
+  align-items: center;
+  margin-top: 8px;  
 }
-.dio{
-  border: 1px solid black;
+ .actions > .barra_like{
+  display: inline;
   width: 40px;
-  height: 50px;
-  margin: 0px;
+  height: 30px;
+  margin-right: 90px;
+  padding-inline: 30px;
 }
-.actions h4{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.41px;
-  /* margin: 5px; */
- 
-}
-.actions .pg {
-  /* border: 1px solid black; */
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  /* padding: 10px 20px 0 20px; */
-}
+
+
 .pg {
   flex-direction: row;
   padding-left: 40px;
   margin-top: -20px;
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  width: 120px;
+  padding: 0px 25px 0px;
+}
+.paragrafo {
+  font-size: 14px;
+  width: 110px;
+  padding: 0;
 }
 
-/* ____________REVISAR ESTE CÓDIGO ABAIXO___________ */
-/* .actions .dio {
-  padding: 1px;
-} */
 
-
-button {
+ .insc {
   width: 159px;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
   background: red;
   color: #f0f0f0;
+  align-items: center;
 }
 
 .sidbar2 img {
@@ -223,16 +210,20 @@ button {
   margin: -2px;
  
 }
+h5 {
+  margin-top: 12px;
+}
+
+p {
+  font-size: clamp(1em, 1em + .1vw, 1.5em);
+}
+
 
 
 @media (max-width: 600px) {
   .sidbar1 {
     grid-template-columns: 1fr;
   }
-  /* .sidbar2 {
-    display: flex; 
-  
-  } */
 
   .sidbar2 {
     flex: 1 0 200px;
@@ -240,8 +231,3 @@ button {
   }
 }
 
-.dio, button, .pg {
-  /* padding: 30px; */
-  margin: 15px 5px 5px 15px;
-  margin-top: -15px;
-} 
